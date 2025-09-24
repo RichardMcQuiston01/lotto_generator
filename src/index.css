@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: 'proxima-nova', 'Open Sans', Arial, sans-serif;
+  }
+
+  body {
+    background-color: #F8F4E6;
+  }
+}

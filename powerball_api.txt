@@ -1,0 +1,20 @@
+curl 'https://www.powerball.com/check-your-numbers?gc=powerball' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: en-US,en;q=0.5' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -b '.AspNet.Consent=no' \
+  -H 'dnt: 1' \
+  -H 'origin: https://www.powerball.com' \
+  -H 'pragma: no-cache' \
+  -H 'priority: u=1, i' \
+  -H 'sec-ch-ua: "Chromium";v="140", "Not=A?Brand";v="24", "Brave";v="140"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'sec-gpc: 1' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36' \
+  -H 'x-requested-with: XMLHttpRequest' \
+  --data-raw '{"gc":"powerball","days":"30","n":["21","31","34","46","47"],"b":["21"]}'
