@@ -21,17 +21,20 @@ A modern, responsive web application for generating Powerball lottery numbers. B
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone git@github.com:RichardMcQuiston01/lotto_generator.git
    cd lotto_generator
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**
+
    ```bash
    npm run dev
    ```
@@ -59,50 +62,6 @@ npm run preview
 3. **Print ticket**: Use "Print Numbers" to create a printer-friendly version
 4. **Reset**: Clear all generated numbers to start over
 
-## Technology Stack
-
-- **Frontend**: React 18
-- **Build Tool**: Vite
-- **Styling**: Tailwind CSS
-- **Font**: Proxima Nova, Open Sans, Arial
-- **Development**: ESLint for code quality
-
-## Project Structure
-
-```
-src/
-├── App.jsx          # Main application component
-├── main.jsx         # Application entry point
-└── index.css        # Global styles and Tailwind imports
-
-public/
-└── [static assets]
-
-config files:
-├── vite.config.js      # Vite configuration
-├── tailwind.config.js  # Tailwind CSS configuration
-├── postcss.config.js   # PostCSS configuration
-└── package.json        # Dependencies and scripts
-```
-
-## Design Features
-
-- **Custom Color Palette**:
-  - Background: `#F8F4E6` (cream)
-  - Headings: `#6D2E5B` (dark purple)
-  - Accent: `#D1A954` (gold)
-  - Tertiary: `#5EBFB6` (teal)
-
-- **Number Ball Styling**:
-  - Main numbers: White-to-gray radial gradient
-  - Powerball: Gold radial gradient with accent colors
-  - Realistic 3D appearance with shadows
-
-- **Button Gradients**:
-  - Generate: Gold gradient matching Powerball colors
-  - Print: Teal gradient matching main number colors
-  - Reset: White-to-gray gradient for neutral action
-
 ## Development Commands
 
 - `npm run dev` - Start development server
@@ -118,6 +77,14 @@ This application is not affiliated with Powerball or The Multi-State Lottery Ass
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## Contributing
+## Technology
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+See [TECHNOLOGY.md](./docs/TECHNOLOGY.md)
+
+## Support
+
+If this library saved you some reverse-engineering, consider [buying me a coffee](https://donate.stripe.com/00w5kD3Gj1Xo9v7gVOcs800). ☕
+
+## Copyright
+
+(c)2026 Richard McQuiston. All rights reserved.
