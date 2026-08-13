@@ -11,7 +11,7 @@
 
 ## Project Structure
 
-```
+```text
 src/
 ├── App.jsx          # Main application component
 ├── DonateFloat.jsx  # Floating Stripe donate card + QR
@@ -30,7 +30,7 @@ config files:
 ├── postcss.config.js   # PostCSS configuration
 ├── vercel.json         # SPA rewrite and security headers
 ├── .eslintrc.cjs       # ESLint configuration
-├── .nvmrc              # Node 20
+├── .nvmrc              # Node 22
 └── package.json        # Dependencies and scripts
 ```
 

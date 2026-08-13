@@ -64,6 +64,7 @@
 
   .btn {
     @apply w-full rounded-lg px-6 font-bold text-black transition duration-300;
+
     min-height: 3rem;
   }
 
