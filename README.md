@@ -18,7 +18,7 @@ Built with React, Vite, and Tailwind CSS.
 
 ### Prerequisites
 
-- Node.js 18.18 or newer (20 LTS recommended; see `.nvmrc`)
+- Node.js 22 or newer (22 LTS recommended; see `.nvmrc`)
 - npm
 
 ### Installation

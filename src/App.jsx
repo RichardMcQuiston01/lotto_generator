@@ -50,6 +50,7 @@ function App() {
   const [isGenerating, setIsGenerating] = useState(false)
   const [setsToGenerate, setSetsToGenerate] = useState(MIN_SETS)
   const [statusMessage, setStatusMessage] = useState('')
+  const [generatedOn, setGeneratedOn] = useState('')
   const generateTimerRef = useRef(null)
   const resultsHeadingRef = useRef(null)
 
@@ -80,6 +81,7 @@ function App() {
         generatePowerballSet,
       )
       setNumberSets(nextSets)
+      setGeneratedOn(new Date().toLocaleDateString())
       setIsGenerating(false)
 
       const countLabel = nextSets.length === 1
@@ -95,7 +97,13 @@ function App() {
    * @returns {void}
    */
   function resetNumbers() {
+    if (generateTimerRef.current !== null) {
+      window.clearTimeout(generateTimerRef.current)
+      generateTimerRef.current = null
+    }
+    setIsGenerating(false)
     setNumberSets([])
+    setGeneratedOn('')
     setStatusMessage('Generated numbers cleared.')
   }
 
@@ -108,7 +116,6 @@ function App() {
   }
 
   const hasSets = numberSets.length > 0
-  const generatedOn = new Date().toLocaleDateString()
 
   return (
     <div className="min-h-screen px-4 py-12">
@@ -253,7 +260,7 @@ function App() {
         </p>
       </div>
 
-      <footer className="mx-auto mt-8 max-w-md p-4 text-center">
+      <footer className="no-print mx-auto mt-8 max-w-md p-4 text-center">
         <p className="mb-2 text-sm text-slate-700">
           This site is not affiliated with Powerball or The Multi-State
           Lottery Association.
