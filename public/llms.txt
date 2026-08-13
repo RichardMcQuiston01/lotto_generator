@@ -1,0 +1,12 @@
+# Powerball Number Generator
+
+A small, unofficial site that generates official-format Powerball number sets for entertainment.
+
+## Site
+
+- [Home](/): generate 1–10 Powerball sets and print them
+
+## Notes
+
+- Not affiliated with Powerball or the Multi-State Lottery Association
+- Official information: https://www.powerball.com/
