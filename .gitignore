@@ -99,9 +99,10 @@ temp/
 .cache/
 .parcel-cache/
 
-# Vite
+# Vite / Vercel
 dist-ssr
 *.local
+.vercel
 
 # Editor directories and files
 .vscode/*
