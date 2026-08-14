@@ -1,0 +1,14 @@
+{
+  "name": "Powerball Number Generator",
+  "short_name": "Powerball",
+  "description": "Generate official-format Powerball numbers and print up to 10 sets per ticket.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8F4E6",
+  "theme_color": "#6D2E5B",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any maskable" }
+  ]
+}
